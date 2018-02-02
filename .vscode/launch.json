@@ -5,7 +5,7 @@
             "name": "Debug unit test",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/node_modules/ava/profile.js",
+            "program": "${workspaceRoot}/../../node_modules/ava/profile.js",
             "stopOnEntry": false,
             "args": ["--no-power-assert", "--no-cache", "test-lib/test/${fileBasenameNoExtension}.js"],
             "cwd": "${workspaceRoot}",
