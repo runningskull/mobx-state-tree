@@ -262,7 +262,7 @@ test("snapshot should be available and updated during an action", t => {
     const a = Model.create({ x: 2 })
     t.is(a.inc(), 3)
     t.is(a.x, 4)
-    t.is(getSnapshot(a).x, 4)
+    t.is((getSnapshot(a) as typeof Model).x, 4)
 })
 
 test("indirectly called private functions should be able to modify state", t => {
